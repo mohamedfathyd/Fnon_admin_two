@@ -9,7 +9,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 
-public interface Response {
+public interface Response_api {
     @GET("Fnon_all_teacher.php")
     Call<List<contact_teacher>> getcontacts_teacher();
     @GET("Fnon_all_group.php")
