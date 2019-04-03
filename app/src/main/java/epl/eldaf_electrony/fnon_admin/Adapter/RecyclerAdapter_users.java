@@ -83,8 +83,8 @@ public static class MyViewHolder extends RecyclerView.ViewHolder {
 
     public MyViewHolder(View itemView) {
         super(itemView);
-        Name=(TextView)itemView.findViewById(R.id.txt_fish_title);
-        phone=itemView.findViewById(R.id.numtext);
+        Name=(TextView)itemView.findViewById(R.id.name);
+        phone=itemView.findViewById(R.id.phone);
 
 
     }

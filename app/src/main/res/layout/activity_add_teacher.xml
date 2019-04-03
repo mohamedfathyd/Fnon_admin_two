@@ -5,15 +5,42 @@
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="20dp"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
-    android:paddingTop="20dp">
+   >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
+        android:background="@color/colorPrimaryDark"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Fnon"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
+
         android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:layout_below="@+id/app_bar"
         android:orientation="vertical">
+
+
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="wrap_content"
@@ -97,7 +124,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="العنوان"
-                android:inputType="textPassword"
+
                 android:maxLines="1"
                  />
         </android.support.design.widget.TextInputLayout>
@@ -112,4 +139,5 @@
 
 
     </android.support.v7.widget.LinearLayoutCompat>
+    </RelativeLayout>
 </android.support.v4.widget.NestedScrollView>

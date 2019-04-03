@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import epl.eldaf_electrony.fnon_admin.View.Add_group;
 import epl.eldaf_electrony.fnon_admin.View.Add_teacher;
+import epl.eldaf_electrony.fnon_admin.View.Delete_group;
 import epl.eldaf_electrony.fnon_admin.View.Delete_teacher;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +39,7 @@ Button add_teacher,delete_teacher,add_group,delete_group;
         delete_group.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Delete_teacher.class));
+                startActivity(new Intent(MainActivity.this, Delete_group.class));
             }
         });
     }
