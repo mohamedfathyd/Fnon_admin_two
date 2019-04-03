@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Fnon_admin</string>
+    <string-array name="account_num">
+        <item>
+            ابتدائي
+           </item>
+        <item>
+            اعدادي
+           </item>
+        <item>
+           ثانوي
+           </item>
+    </string-array>
+    <string-array name="year">
+        <item>
+           اولى
+           </item>
+        <item>
+            تانيه
+           </item>
+        <item>
+           تالته
+           </item>
+
+        <item>
+            رابعه
+           </item>
+        <item>
+           خامسه
+           </item>
+        <item>
+           سادسه
+           </item>
+    </string-array>
+    <string-array name="year_">
+        <item>
+           اولى
+           </item>
+        <item>
+            تانيه
+           </item>
+        <item>
+           تالته
+           </item>
+    </string-array>
+    <string-array name="type">
+        <item>
+            بنين
+           </item>
+        <item>
+            بنات
+           </item>
+
+    </string-array>
+</resources>
