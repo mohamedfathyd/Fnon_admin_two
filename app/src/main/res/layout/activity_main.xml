@@ -24,36 +24,69 @@
             android:layout_gravity="center"
             android:id="@+id/toolbar_title" />
     </android.support.v7.widget.Toolbar>
-    <LinearLayout
+    <android.support.v7.widget.AppCompatImageView
         android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/img"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_centerInParent="true"
-        android:layout_margin="10dp"
+       android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/img"
         >
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/add_teacher"
             android:text="أضافة مدرس"
+            android:layout_margin="20dp"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/delete_teacher"
             android:text="حذف مدرس"
+            android:textColor="@color/brown"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimaryDark"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:id="@+id/add_group"
+            android:textStyle="bold"
+            android:textSize="20dp"
             android:text="أضافة مجموعة"
+            android:textColor="@color/brown"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/delete_group"
             android:text="حذف مجموعة"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/brown"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimaryDark"
             />
     </LinearLayout>
 

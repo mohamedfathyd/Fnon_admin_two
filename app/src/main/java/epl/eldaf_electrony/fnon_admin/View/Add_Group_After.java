@@ -86,7 +86,7 @@ public class Add_Group_After extends AppCompatActivity {
         Call<ResponseBody> call = apiinterface.getcontacts_add_group(namee
                 ,teacher_id,spinyear.getSelectedItem().toString(),textInputEditTextgroup.getText().toString(),
                 spintype.getSelectedItem().toString(),spin.getSelectedItem().toString(),textInputEditTextnumstudent.getText().toString(),
-                textInputEditTextprice.getText().toString()
+                Double.parseDouble(textInputEditTextprice.getText().toString())
                 );
 
         call.enqueue(new Callback<ResponseBody>() {

@@ -20,7 +20,7 @@ public class contact_group {
     @SerializedName("num_student")
     int num_student;
     @SerializedName("price")
-    int price;
+    double price;
 
     public int getId() {
         return id;
@@ -86,11 +86,11 @@ public class contact_group {
         this.num_student = num_student;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }
