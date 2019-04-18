@@ -14,6 +14,8 @@ import retrofit2.http.POST;
 public interface Response_api {
     @GET("fnon/Fnon_all_teacher.php")
     Call<List<contact_teacher>> getcontacts_teacher();
+    @GET("fnon/Fnon_all_student.php")
+    Call<List<contact_student>> getcontacts_student();
     @GET("fnon/Fnon_all_group.php")
     Call<List<contact_group>> getcontacts_group();
     @FormUrlEncoded
@@ -22,6 +24,9 @@ public interface Response_api {
     @FormUrlEncoded
     @POST("fnon/Fnon_delete_teacher.php")
     Call<ResponseBody> getcontacts_delete_teacher(@Field("id") int id);
+    @FormUrlEncoded
+    @POST("fnon/Fnon_delete_student.php")
+    Call<ResponseBody> getcontacts_delete_student(@Field("id") int id);
     @FormUrlEncoded
     @POST("fnon/Fnon_add_group.php")
     Call<ResponseBody> getcontacts_add_group(@Field("name") String name, @Field("teacher_id") int teacher_id, @Field("year") String year, @Field("group_name") String group_name

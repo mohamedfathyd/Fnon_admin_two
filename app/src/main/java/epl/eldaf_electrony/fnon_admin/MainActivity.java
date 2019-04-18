@@ -1,6 +1,6 @@
 package epl.eldaf_electrony.fnon_admin;
 
-import android.R;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import epl.eldaf_electrony.fnon_admin.View.Delete_group;
 import epl.eldaf_electrony.fnon_admin.View.Delete_teacher;
 
 public class MainActivity extends AppCompatActivity {
-Button add_teacher,delete_teacher,add_group,delete_group;
+Button add_teacher,delete_teacher,add_group,delete_group,delete_student;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,11 +43,18 @@ Button add_teacher,delete_teacher,add_group,delete_group;
                 startActivity(new Intent(MainActivity.this, Delete_group.class));
             }
         });
+        delete_student.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
     public void initializer(){
         add_teacher=findViewById(R.id.add_teacher);
         add_group=findViewById(R.id.add_group);
         delete_group=findViewById(R.id.delete_group);
         delete_teacher=findViewById(R.id.delete_teacher);
+        delete_student=findViewById(R.id.delete_student);
     }
 }
