@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import epl.eldaf_electrony.fnon_admin.Model.ApiConfigration;
 import epl.eldaf_electrony.fnon_admin.Model.Response_api;
@@ -59,8 +60,14 @@ public class Add_Group_After extends AppCompatActivity {
         regesiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-          fetchInfo();
+                if(textInputEditTextgroup.getText().toString().equals("")||textInputEditTextnumstudent.getText().toString().equals("")||
+                        textInputEditTextprice.getText().toString().equals("")){
+                    Toast.makeText(Add_Group_After.this, "يجب ملئ الجقول الفارغة " ,Toast.LENGTH_LONG).show();
+                }
+                else{
+                    fetchInfo();}
             }
+
         });
     }
     public void inisialize() {

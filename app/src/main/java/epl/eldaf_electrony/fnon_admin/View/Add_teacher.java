@@ -10,6 +10,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import epl.eldaf_electrony.fnon_admin.Model.ApiConfigration;
 import epl.eldaf_electrony.fnon_admin.Model.Response_api;
@@ -50,7 +51,12 @@ public class Add_teacher extends AppCompatActivity {
         regesiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-fetchInfo();
+               if(textInputEditTextaddress.getText().toString().equals("")||textInputEditTextname.getText().toString().equals("")||
+               textInputEditTextpassword.getText().toString().equals("")||textInputEditTextphone.getText().toString().equals("")){
+                   Toast.makeText(Add_teacher.this, "يجب ملئ الجقول الفارغة " ,Toast.LENGTH_LONG).show();
+               }
+               else{
+                fetchInfo();}
             }
         });
     }
