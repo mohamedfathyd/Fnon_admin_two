@@ -24,8 +24,8 @@ import retrofit2.Response;
 
 public class Add_Group_After extends AppCompatActivity {
     TextInputLayout textInputLayoutgroup,textInputLayoutnumstudent,
-            textInputLayoutprice;
-    TextInputEditText textInputEditTextgroup,textInputEditTextnumstudent,textInputEditTextprice;
+            textInputLayoutprice,textInputLayoutdate;
+    TextInputEditText textInputEditTextgroup,textInputEditTextnumstudent,textInputEditTextprice,textInputEditTextdate;
     AppCompatButton regesiter;
     TextView name;
     ProgressDialog progressDialog;
@@ -61,7 +61,7 @@ public class Add_Group_After extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(textInputEditTextgroup.getText().toString().equals("")||textInputEditTextnumstudent.getText().toString().equals("")||
-                        textInputEditTextprice.getText().toString().equals("")){
+                        textInputEditTextprice.getText().toString().equals("")||textInputEditTextdate.getText().toString().equals("")){
                     Toast.makeText(Add_Group_After.this, "يجب ملئ الحقول الفارغة " ,Toast.LENGTH_LONG).show();
                 }
                 else{
@@ -75,7 +75,8 @@ public class Add_Group_After extends AppCompatActivity {
         spin=findViewById(R.id.spin);
         textInputLayoutnumstudent = (TextInputLayout) findViewById(R.id.textInputLayoutnumstudent);
         textInputLayoutprice = (TextInputLayout) findViewById(R.id.textInputLayoutprice);
-
+        textInputLayoutdate=findViewById(R.id.textInputLayoutdate);
+        textInputEditTextdate=findViewById(R.id.textInputEditTextdate);
         textInputEditTextgroup = (TextInputEditText) findViewById(R.id.textInputEditTextgroup);
         textInputEditTextnumstudent = (TextInputEditText) findViewById(R.id.textInputEditTextnumstudent);
         textInputEditTextprice = (TextInputEditText) findViewById(R.id.textInputEditTextprice);
@@ -93,7 +94,7 @@ public class Add_Group_After extends AppCompatActivity {
         Call<ResponseBody> call = apiinterface.getcontacts_add_group(namee
                 ,teacher_id,spinyear.getSelectedItem().toString(),textInputEditTextgroup.getText().toString(),
                 spintype.getSelectedItem().toString(),spin.getSelectedItem().toString(),textInputEditTextnumstudent.getText().toString(),
-                Double.parseDouble(textInputEditTextprice.getText().toString())
+                Double.parseDouble(textInputEditTextprice.getText().toString()),textInputEditTextdate.getText().toString()
                 );
 
         call.enqueue(new Callback<ResponseBody>() {

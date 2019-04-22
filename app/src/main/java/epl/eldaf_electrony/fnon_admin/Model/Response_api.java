@@ -30,7 +30,7 @@ public interface Response_api {
     @FormUrlEncoded
     @POST("fnon/Fnon_add_group.php")
     Call<ResponseBody> getcontacts_add_group(@Field("name") String name, @Field("teacher_id") int teacher_id, @Field("year") String year, @Field("group_name") String group_name
-    , @Field("type") String type, @Field("Stage") String Stage, @Field("num_student") String num_student, @Field("price") double price);
+    , @Field("type") String type, @Field("Stage") String Stage, @Field("num_student") String num_student, @Field("price") double price,@Field("date_start") String date_start);
     @FormUrlEncoded
     @POST("fnon/Fnon_add_teacher.php")
     Call<ResponseBody> getcontacts_add_teacher(@Field("name") String name,@Field("phone") String phone,@Field("password") String password,@Field("Stage") String Stage
