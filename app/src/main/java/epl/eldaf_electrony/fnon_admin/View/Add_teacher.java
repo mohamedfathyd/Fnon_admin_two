@@ -53,7 +53,7 @@ public class Add_teacher extends AppCompatActivity {
             public void onClick(View v) {
                if(textInputEditTextaddress.getText().toString().equals("")||textInputEditTextname.getText().toString().equals("")||
                textInputEditTextpassword.getText().toString().equals("")||textInputEditTextphone.getText().toString().equals("")){
-                   Toast.makeText(Add_teacher.this, "يجب ملئ الجقول الفارغة " ,Toast.LENGTH_LONG).show();
+                   Toast.makeText(Add_teacher.this, "يجب ملئ الحقول الفارغة " ,Toast.LENGTH_LONG).show();
                }
                else{
                 fetchInfo();}

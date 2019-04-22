@@ -62,7 +62,7 @@ public class Add_Group_After extends AppCompatActivity {
             public void onClick(View v) {
                 if(textInputEditTextgroup.getText().toString().equals("")||textInputEditTextnumstudent.getText().toString().equals("")||
                         textInputEditTextprice.getText().toString().equals("")){
-                    Toast.makeText(Add_Group_After.this, "يجب ملئ الجقول الفارغة " ,Toast.LENGTH_LONG).show();
+                    Toast.makeText(Add_Group_After.this, "يجب ملئ الحقول الفارغة " ,Toast.LENGTH_LONG).show();
                 }
                 else{
                     fetchInfo();}
