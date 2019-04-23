@@ -40,6 +40,6 @@ public interface Response_api {
     @GET("fnon/Fnon_annonce.php")
     Call<List<contact_annonce>> getcontacts_annonce();
     @FormUrlEncoded
-    @POST("Mano_all_annonce_category_delete.php")
+    @POST("fnon/Fnon_all_annonce_category_delete.php")
     Call<ResponseBody> delete_annonce(@Field("id") int id);
 }

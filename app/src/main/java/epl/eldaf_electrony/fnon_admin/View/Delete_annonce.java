@@ -50,8 +50,8 @@ public class Delete_annonce extends AppCompatActivity {
         name = intent.getStringExtra("name");
         id = intent.getIntExtra("id", 0);
 
-        myTypeface = Typeface.createFromAsset(getAssets(), "fonts/flat.ttf");
-        textView.setText("مسح اعلان خارجي");
+//        myTypeface = Typeface.createFromAsset(getAssets(), "fonts/flat.ttf");
+        textView.setText("مسح خبر");
         textView.setTypeface(myTypeface);
 
         this.setTitle("");

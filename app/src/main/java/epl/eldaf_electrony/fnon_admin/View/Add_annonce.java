@@ -71,7 +71,7 @@ public class Add_annonce extends AppCompatActivity {
             }
         });
 
-        textInputEditTextname.setVisibility(View.GONE);
+       // textInputEditTextname.setVisibility(View.GONE);
         regesiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

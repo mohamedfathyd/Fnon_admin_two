@@ -48,7 +48,7 @@ public class RecyclerAdapter_deleteannonce extends RecyclerView.Adapter<Recycler
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
 
-        myTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/flat.ttf");
+//        myTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/flat.ttf");
 
         Glide.with(context).load(contactslist.get(position).getImage()).error(R.drawable.logo).into(holder.image);
        holder.itemView.setOnClickListener(new View.OnClickListener() {
