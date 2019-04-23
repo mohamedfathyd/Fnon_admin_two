@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    >
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -77,17 +84,17 @@
             android:background="@color/colorPrimaryDark"
             />
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:id="@+id/add_group"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:text="أضافة مجموعة"
-            android:textColor="@color/brown"
-            android:padding="10dp"
-            android:background="@color/colorPrimaryDark"
-            />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/add_group"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="أضافة مجموعة"
+        android:textColor="@color/brown"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,6 +107,31 @@
             android:layout_margin="20dp"
             android:background="@color/colorPrimaryDark"
             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/add_annonce"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="أضافة خبر"
+            android:textColor="@color/brown"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_annonce"
+            android:text="حذف خبر"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/brown"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimaryDark"
+            />
     </LinearLayout>
 
 </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

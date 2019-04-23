@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".View.Delete_student"></activity>
+        <activity android:name=".View.Delete_annonce"></activity>
+        <activity android:name=".View.Add_annonce" />
+        <activity android:name=".View.Delete_student" />
         <activity
             android:name=".View.Splash_activity"
             android:screenOrientation="portrait">
@@ -39,7 +41,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

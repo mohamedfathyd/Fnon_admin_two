@@ -35,5 +35,11 @@ public interface Response_api {
     @POST("fnon/Fnon_add_teacher.php")
     Call<ResponseBody> getcontacts_add_teacher(@Field("name") String name,@Field("phone") String phone,@Field("password") String password,@Field("Stage") String Stage
             ,@Field("address") String address);
-
+    @FormUrlEncoded
+    @POST("fnon/Fnon_add_annonce.php") Call<ResponseBody> getcontacts_add_annonce(@Field("image") String image,@Field("details") String details);
+    @GET("fnon/Fnon_annonce.php")
+    Call<List<contact_annonce>> getcontacts_annonce();
+    @FormUrlEncoded
+    @POST("Mano_all_annonce_category_delete.php")
+    Call<ResponseBody> delete_annonce(@Field("id") int id);
 }
