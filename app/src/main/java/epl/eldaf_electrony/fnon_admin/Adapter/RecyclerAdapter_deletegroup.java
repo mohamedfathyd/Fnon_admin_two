@@ -1,7 +1,9 @@
 package epl.eldaf_electrony.fnon_admin.Adapter;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -54,8 +56,17 @@ public class RecyclerAdapter_deletegroup extends RecyclerView.Adapter<RecyclerAd
          holder.delete.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               int id=contactslist.get(position).getId();
-               fetchInfo(id);
+               new AlertDialog.Builder(context)
+                       .setTitle("Fnon")
+                       .setMessage("هل انت متأكد انك تريد المسح ؟")
+                       .setIcon(android.R.drawable.ic_dialog_alert)
+                       .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                           public void onClick(DialogInterface dialog, int whichButton) {
+                               int id=contactslist.get(position).getId();
+                               fetchInfo(id);
+                           }})
+                       .setNegativeButton(android.R.string.no, null).show();
            }
        });
     }

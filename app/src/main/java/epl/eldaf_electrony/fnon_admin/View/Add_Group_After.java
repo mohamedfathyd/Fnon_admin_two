@@ -60,8 +60,8 @@ public class Add_Group_After extends AppCompatActivity {
         regesiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(textInputEditTextgroup.getText()==null||textInputEditTextnumstudent.getText()==null||
-                        textInputEditTextprice.getText()==null||textInputEditTextdate.getText()==null){
+                if(textInputEditTextgroup.getText().toString().equals("")||textInputEditTextnumstudent.getText().toString().equals("")||
+                        textInputEditTextprice.getText().toString().equals("")||textInputEditTextdate.getText().toString().equals("")){
                     Toast.makeText(Add_Group_After.this, "يجب ملئ الحقول الفارغة " ,Toast.LENGTH_LONG).show();
                 }
                 else{

@@ -51,8 +51,8 @@ public class Add_teacher extends AppCompatActivity {
         regesiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if(textInputEditTextaddress.getText()==null||textInputEditTextname.getText()==null||
-               textInputEditTextpassword.getText()==null||textInputEditTextphone.getText()==null){
+               if(textInputEditTextaddress.getText().toString().equals("")||textInputEditTextname.getText().toString().equals("")||textInputEditTextpassword.getText().toString().equals(""
+               )||textInputEditTextphone.getText().toString().equals("")){
                    Toast.makeText(Add_teacher.this, "يجب ملئ الحقول الفارغة " ,Toast.LENGTH_LONG).show();
                }
                else{
